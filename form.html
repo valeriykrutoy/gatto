@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Form Sample</title>
+</head>
+
+<body>
+    <header>
+        <h1>ТЕСТ</h1>
+        <h2>Хеллоу Китти</h2>
+        <p>Давай проверим как хорошо ты знаешь этого маленького котёнка</p>
+        <form method="POST" action="https://formspree.io/valeriy.krutoy@gmail.com">
+            <p><b>1. Китти это</b></p>
+            <input type="radio" name="answer" value="a1">Кошка<br>
+                <input type="radio" name="answer" value="2">Не знаю<br>
+                <input type="radio" name="answer" value="3">Маленькая белая кошечка<br>
+        </form>
+        <form method="POST" action="https://formspree.io/valeriy.krutoy@gmail.com">
+            <p><b>2. Дизайнерами какой компании была создана Китти</b></p>
+            <input type="radio" name="answer" value="a1">Sanrio<br>
+                <input type="radio" name="answer" value="a2">Morklan<br>
+                <input type="radio" name="answer" value="a3">Не знаю<br>
+        </form>
+        <form method="POST" action="https://formspree.io/valeriy.krutoy@gmail.com">
+            <p><b>3. В каком году появилась эта компания</b></p>
+            <input type="radio" name="answer" value="a1">1960<br>
+                <input type="radio" name="answer" value="a2">Не знаю<br>
+                <input type="radio" name="answer" value="a3">1975<br>
+        </form>
+        <form method="POST" action="https://formspree.io/valeriy.krutoy@gmail.com">
+            <p><b>4. Какие друзья есть у Китти?</b></p>
+            <input type="radio" name="answer" value="a1">Кролик,овечка<br>
+            <input type="radio" name="answer" value="a2">Не знаю<br>
+            <input type="radio" name="answer" value="a3">Кролик,овечка,енот и мышка<br>
+            </form>
+            <form method="POST" action="https://formspree.io/valeriy.krutoy@gmail.com">
+                <p><b>5. Их имена</b></p>
+                <input type="radio" name="answer" value="a1">Не знаю<br>
+                <input type="radio" name="answer" value="a2">Кэти,Фифи<br>
+                <input type="radio" name="answer" value="a3">Кэти,Фифи,Трэйси и Джо<br>
+                </form>
+        <br>
+        <br>
+        <p>Hello Kitty love level: <input type="range" min="1" max="10" id="size" oninput="sizePic()" value="1"></p>
+        <p><img src="HelloKitty.jpg" width="200" height="200" alt="" id="pic"></p>
+        <p><b>Коротко о себе; </b><br>
+            <i>(Пол)</i></p>
+        <form method="POST" action="https://formspree.io/valeriy.krutoy@gmail.com">
+            <input type="radio" name="answer" value="a1">Мужской<br>
+            <input type="radio" name="answer" value="2">Женский<br>
+            <input type="radio" name="answer" value="3">Другой<br>
+        </form>
+        <p><label>Дата рождения:
+                <input type="text" size="20" name="client-data">
+                   </label></p>
+        <p><label>Семейное положение:
+                    <input type="text" size="20" name="client-ms">
+                </label></p>
+        <label>Местожительство:
+                    <input type="text" size="20" name="client-l">
+                </label>
+        <br>
+        <br>
+        <p><b>Регистрация;</b></p>
+        <label for="client-name">Имя: </label>
+        <input type="text" name="client-name" placeholder="Имя" id="client-name" required>
+        <br>
+        <br>
+        <label>Пароль:
+                <input type="password" name="client-password" placeholder="Пароль" id="client-password"
+                required>
+                </label>
+        <br>
+        <br>
+        <label>Почта / email: 
+                <input type="email" name="client-email" placeholder="whatever@mail.com"
+                required>
+                </label>
+        <br>
+        <br>
+        <p><input type="submit" value="Отправить результат">
+            <input type="reset" value="Сброс"></p>
+    </header>
+</body>
+
+</html>
