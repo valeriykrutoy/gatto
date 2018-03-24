@@ -1,61 +1,60 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Form Sample</title>
+    <title>Hello Kitty Test</title>
+    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
 </head>
-
 <body>
+    <a href="index.html">Вернуться на главную страницу</a>
     <header>
-        <h1>ТЕСТ</h1>
-        <h2>Хеллоу Китти</h2>
+        <h1><b>Тест</b><i>Хеллоу Китти</i></h1>
         <p>Давай проверим как хорошо ты знаешь этого маленького котёнка</p>
         <form method="POST" action="https://formspree.io/valeriy.krutoy@gmail.com">
             <p><b>1. Китти это</b></p>
-            <input type="radio" name="answer" value="a1">Кошка<br>
-                <input type="radio" name="answer" value="2">Не знаю<br>
-                <input type="radio" name="answer" value="3">Маленькая белая кошечка<br>
+            <label><input type="radio" name="answer" value="a1">Кошка<br></label>
+                <label><input type="radio" name="answer" value="2">Не знаю<br></label>
+                <label><input type="radio" name="answer" value="3">Маленькая белая кошечка<br></label>
         </form>
         <form method="POST" action="https://formspree.io/valeriy.krutoy@gmail.com">
             <p><b>2. Дизайнерами какой компании была создана Китти</b></p>
-            <input type="radio" name="answer" value="a1">Sanrio<br>
-                <input type="radio" name="answer" value="a2">Morklan<br>
-                <input type="radio" name="answer" value="a3">Не знаю<br>
+            <label><input type="radio" name="answer" value="a1">Sanrio<br></label>
+                <label><input type="radio" name="answer" value="a2">Morklan<br></label>
+                <label><input type="radio" name="answer" value="a3">Не знаю<br></label>
         </form>
         <form method="POST" action="https://formspree.io/valeriy.krutoy@gmail.com">
             <p><b>3. В каком году появилась эта компания</b></p>
-            <input type="radio" name="answer" value="a1">1960<br>
-                <input type="radio" name="answer" value="a2">Не знаю<br>
-                <input type="radio" name="answer" value="a3">1975<br>
+            <label><input type="radio" name="answer" value="a1">1960<br></label>
+                <label><input type="radio" name="answer" value="a2">Не знаю<br></label>
+                <label><input type="radio" name="answer" value="a3">1975<br></label>
         </form>
         <form method="POST" action="https://formspree.io/valeriy.krutoy@gmail.com">
             <p><b>4. Какие друзья есть у Китти?</b></p>
-            <input type="radio" name="answer" value="a1">Кролик,овечка<br>
-            <input type="radio" name="answer" value="a2">Не знаю<br>
-            <input type="radio" name="answer" value="a3">Кролик,овечка,енот и мышка<br>
+            <label><input type="radio" name="answer" value="a1">Кролик,овечка<br></label>
+            <label><input type="radio" name="answer" value="a2">Не знаю<br></label>
+            <label><input type="radio" name="answer" value="a3">Кролик,овечка,енот и мышка<br></label>
             </form>
             <form method="POST" action="https://formspree.io/valeriy.krutoy@gmail.com">
                 <p><b>5. Их имена</b></p>
-                <input type="radio" name="answer" value="a1">Не знаю<br>
-                <input type="radio" name="answer" value="a2">Кэти,Фифи<br>
-                <input type="radio" name="answer" value="a3">Кэти,Фифи,Трэйси и Джо<br>
+                <label><input type="radio" name="answer" value="a1">Не знаю<br></label>
+                <label><input type="radio" name="answer" value="a2">Кэти,Фифи<br></label>
+                <label><input type="radio" name="answer" value="a3">Кэти,Фифи,Трэйси и Джо<br></label>
                 </form>
         <br>
         <br>
         <p>Hello Kitty love level: <input type="range" min="1" max="10" id="size" oninput="sizePic()" value="1"></p>
         <p><img src="HelloKitty.jpg" width="200" height="200" alt="" id="pic"></p>
+        <label>Выберите цвет Hello Kitty:<input type="color" name="hk-color"><br></label>
         <p><b>Коротко о себе; </b><br>
             <i>(Пол)</i></p>
         <form method="POST" action="https://formspree.io/valeriy.krutoy@gmail.com">
-            <input type="radio" name="answer" value="a1">Мужской<br>
-            <input type="radio" name="answer" value="2">Женский<br>
-            <input type="radio" name="answer" value="3">Другой<br>
-        </form>
+            <label><input type="radio" name="answer" value="a1">Мужской<br></label>
+            <label><input type="radio" name="answer" value="2">Женский<br></label>
+            <label><input type="radio" name="answer" value="3">Другой<br></label>
         <p><label>Дата рождения:
-                <input type="text" size="20" name="client-data">
+                <input type="date" size="20" name="client-data">
                    </label></p>
         <p><label>Семейное положение:
                     <input type="text" size="20" name="client-ms">
@@ -82,9 +81,9 @@
                 </label>
         <br>
         <br>
-        <p><input type="submit" value="Отправить результат">
-            <input type="reset" value="Сброс"></p>
+        <input type="submit" value="Отправить результат">
+        <input type="reset" value="Сбросить">
+            </form>
     </header>
 </body>
-
 </html>
