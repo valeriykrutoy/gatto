@@ -1,51 +1,53 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
+    <link rel="shortcut icon" href="http://sstatic.net/stackoverflow/img/favicon.ico">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Hello Kitty Test</title>
-    <link rel="shortcut icon" href="/images/favicon.ico" type="image/x-icon">
 </head>
+
 <body>
     <a href="index.html">Вернуться на главную страницу</a>
-    <header>
+    <main>
         <h1><b>Тест</b><i>Хеллоу Китти</i></h1>
         <p>Давай проверим как хорошо ты знаешь этого маленького котёнка</p>
         <form method="POST" action="https://formspree.io/valeriy.krutoy@gmail.com">
             <p><b>1. Китти это</b></p>
             <label><input type="radio" name="answer" value="a1">Кошка<br></label>
-                <label><input type="radio" name="answer" value="2">Не знаю<br></label>
-                <label><input type="radio" name="answer" value="3">Маленькая белая кошечка<br></label>
+            <label><input type="radio" name="answer" value="2">Не знаю<br></label>
+            <label><input type="radio" name="answer" value="3">Маленькая белая кошечка<br></label>
         </form>
         <form method="POST" action="https://formspree.io/valeriy.krutoy@gmail.com">
             <p><b>2. Дизайнерами какой компании была создана Китти</b></p>
             <label><input type="radio" name="answer" value="a1">Sanrio<br></label>
-                <label><input type="radio" name="answer" value="a2">Morklan<br></label>
-                <label><input type="radio" name="answer" value="a3">Не знаю<br></label>
+            <label><input type="radio" name="answer" value="a2">Morklan<br></label>
+            <label><input type="radio" name="answer" value="a3">Не знаю<br></label>
         </form>
         <form method="POST" action="https://formspree.io/valeriy.krutoy@gmail.com">
             <p><b>3. В каком году появилась эта компания</b></p>
             <label><input type="radio" name="answer" value="a1">1960<br></label>
-                <label><input type="radio" name="answer" value="a2">Не знаю<br></label>
-                <label><input type="radio" name="answer" value="a3">1975<br></label>
+            <label><input type="radio" name="answer" value="a2">Не знаю<br></label>
+            <label><input type="radio" name="answer" value="a3">1975<br></label>
         </form>
         <form method="POST" action="https://formspree.io/valeriy.krutoy@gmail.com">
             <p><b>4. Какие друзья есть у Китти?</b></p>
             <label><input type="radio" name="answer" value="a1">Кролик,овечка<br></label>
             <label><input type="radio" name="answer" value="a2">Не знаю<br></label>
             <label><input type="radio" name="answer" value="a3">Кролик,овечка,енот и мышка<br></label>
-            </form>
-            <form method="POST" action="https://formspree.io/valeriy.krutoy@gmail.com">
-                <p><b>5. Их имена</b></p>
-                <label><input type="radio" name="answer" value="a1">Не знаю<br></label>
-                <label><input type="radio" name="answer" value="a2">Кэти,Фифи<br></label>
-                <label><input type="radio" name="answer" value="a3">Кэти,Фифи,Трэйси и Джо<br></label>
-                </form>
+        </form>
+        <form method="POST" action="https://formspree.io/valeriy.krutoy@gmail.com">
+            <p><b>5. Их имена</b></p>
+            <label><input type="radio" name="answer" value="a1">Не знаю<br></label>
+            <label><input type="radio" name="answer" value="a2">Кэти,Фифи<br></label>
+            <label><input type="radio" name="answer" value="a3">Кэти,Фифи,Трэйси и Джо<br></label>
+        </form>
         <br>
         <br>
         <p>Hello Kitty love level: <input type="range" min="1" max="10" id="size" oninput="sizePic()" value="1"></p>
-        <p><img src="HelloKitty.jpg" width="200" height="200" alt="" id="pic"></p>
+        <p><img src="salutkitty.jpg" width="200" height="200" alt="Salut Kitty" id="pic"></p>
         <label>Выберите цвет Hello Kitty:<input type="color" name="hk-color"><br></label>
         <p><b>Коротко о себе; </b><br>
             <i>(Пол)</i></p>
@@ -53,39 +55,42 @@
             <label><input type="radio" name="answer" value="a1">Мужской<br></label>
             <label><input type="radio" name="answer" value="2">Женский<br></label>
             <label><input type="radio" name="answer" value="3">Другой<br></label>
-        <p><label>Дата рождения:
+            <p><label>Дата рождения:
                 <input type="date" size="20" name="client-data">
                    </label></p>
-        <p><label>Семейное положение:
+            <p><label>Семейное положение:
                     <input type="text" size="20" name="client-ms">
                 </label></p>
-        <label>Местожительство:
+            <label>Местожительство:
                     <input type="text" size="20" name="client-l">
                 </label>
-        <br>
-        <br>
-        <p><b>Регистрация;</b></p>
-        <label for="client-name">Имя: </label>
-        <input type="text" name="client-name" placeholder="Имя" id="client-name" required>
-        <br>
-        <br>
-        <label>Пароль:
+            <br>
+            <br>
+            <p><b>Регистрация;</b></p>
+            <label for="client-name">Имя: </label>
+            <input type="text" name="client-name" placeholder="Имя" id="client-name" required>
+            <br>
+            <br>
+            <label>Пароль:
                 <input type="password" name="client-password" placeholder="Пароль" id="client-password"
                 required>
                 </label>
-        <br>
-        <br>
-        <label>Почта / email: 
+            <br>
+            <br>
+            <label>Почта / email: 
                 <input type="email" name="client-email" placeholder="whatever@mail.com"
                 required>
                 </label>
-    <label><p><b>Ваш комментарий:</b></p>
-    <p><textarea rows="10" cols="45" name="text" placeholder="Meow Meow" ></textarea></p>
-        <br>
-        <br>
-        <input type="submit" value="Отправить результат">
-        <input type="reset" value="Сбросить">
-            </form>
-    </header>
+            <br>
+            <br>
+<textarea rows="10" cols="45" name="text" placeholder="Ваш комментарий (...)"></textarea>
+            
+            <br>
+            <br>
+            <input type="submit" value="Отправить результат">
+            <input type="reset" value="Сбросить">
+        </form>
+    </main>
 </body>
+
 </html>
